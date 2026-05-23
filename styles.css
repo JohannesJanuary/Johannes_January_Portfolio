@@ -441,7 +441,7 @@ h3 {
 }
 
 .project-card {
-  min-height: 630px;
+  min-height: 470px;
   padding: 18px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -482,6 +482,62 @@ h3 {
   padding-left: 18px;
   color: var(--ink);
   font-size: 14px;
+}
+
+.project-details {
+  margin-top: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--band);
+}
+
+.project-details summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 13px;
+  color: var(--navy);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 900;
+  list-style: none;
+}
+
+.project-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-details summary::after {
+  content: "+";
+  display: grid;
+  flex: 0 0 24px;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: #fff;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.project-details[open] summary::after {
+  content: "-";
+}
+
+.project-details[open] {
+  background: #fff;
+}
+
+.project-details .project-meta,
+.project-details ul {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.project-details ul {
+  margin-bottom: 13px;
 }
 
 .project-visual {
