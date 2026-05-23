@@ -430,6 +430,10 @@ h3 {
   font-size: 14px;
 }
 
+.project-card > p {
+  line-height: 1.5;
+}
+
 .project-section {
   background: var(--band);
 }
@@ -443,7 +447,7 @@ h3 {
 .project-card {
   display: flex;
   flex-direction: column;
-  min-height: 255px;
+  min-height: 315px;
   padding: 22px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -534,7 +538,7 @@ h3 {
 
 .project-detail-layout {
   display: grid;
-  grid-template-columns: minmax(240px, 0.92fr) minmax(260px, 1.08fr);
+  grid-template-columns: minmax(250px, 0.86fr) minmax(300px, 1.14fr);
   gap: 14px;
   padding: 0 12px 14px;
   align-items: stretch;
@@ -543,7 +547,7 @@ h3 {
 .project-detail-copy {
   display: grid;
   align-content: start;
-  gap: 10px;
+  gap: 12px;
 }
 
 .project-details .project-meta,
@@ -787,12 +791,12 @@ h3 {
 
 .project-meta {
   display: grid;
-  gap: 8px;
+  gap: 9px;
   margin: 0;
 }
 
 .project-meta div {
-  padding: 10px 11px;
+  padding: 11px 12px;
   border-left: 3px solid var(--blue);
   background: var(--band);
 }
@@ -808,6 +812,7 @@ h3 {
   margin: 4px 0 0;
   color: var(--muted);
   font-size: 13px;
+  line-height: 1.42;
 }
 
 #courses {
