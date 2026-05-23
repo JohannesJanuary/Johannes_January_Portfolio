@@ -441,7 +441,7 @@ h3 {
 }
 
 .project-card {
-  min-height: 470px;
+  min-height: 255px;
   padding: 18px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -528,6 +528,10 @@ h3 {
 
 .project-details[open] {
   background: #fff;
+}
+
+.project-details .project-visual {
+  margin: 0 12px 14px;
 }
 
 .project-details .project-meta,
