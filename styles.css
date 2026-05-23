@@ -436,13 +436,15 @@ h3 {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(230px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(2, minmax(360px, 1fr));
+  gap: 20px;
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
   min-height: 255px;
-  padding: 18px;
+  padding: 22px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fff;
@@ -457,7 +459,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 16px 0 16px;
+  margin: 0 0 16px;
 }
 
 .project-topline span {
@@ -485,7 +487,7 @@ h3 {
 }
 
 .project-details {
-  margin-top: 16px;
+  margin-top: auto;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--band);
@@ -530,23 +532,35 @@ h3 {
   background: #fff;
 }
 
-.project-details .project-visual {
-  margin: 0 12px 14px;
+.project-detail-layout {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.92fr) minmax(260px, 1.08fr);
+  gap: 14px;
+  padding: 0 12px 14px;
+  align-items: stretch;
+}
+
+.project-detail-copy {
+  display: grid;
+  align-content: start;
+  gap: 10px;
 }
 
 .project-details .project-meta,
 .project-details ul {
-  margin-left: 12px;
-  margin-right: 12px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .project-details ul {
-  margin-bottom: 13px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .project-visual {
   position: relative;
-  height: 245px;
+  min-height: 245px;
+  height: 100%;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -773,12 +787,12 @@ h3 {
 
 .project-meta {
   display: grid;
-  gap: 10px;
-  margin: 16px 0 0;
+  gap: 8px;
+  margin: 0;
 }
 
 .project-meta div {
-  padding: 11px 12px;
+  padding: 10px 11px;
   border-left: 3px solid var(--blue);
   background: var(--band);
 }
@@ -1004,9 +1018,12 @@ h3 {
 
 @media (max-width: 1120px) {
   .role-grid,
-  .project-grid,
   .course-grid {
     grid-template-columns: repeat(2, minmax(240px, 1fr));
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1031,6 +1048,10 @@ h3 {
   }
 
   .hero-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .project-detail-layout {
     grid-template-columns: 1fr;
   }
 
