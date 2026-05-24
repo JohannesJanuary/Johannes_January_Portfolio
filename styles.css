@@ -1006,15 +1006,17 @@ h3 {
 .evidence-card::after {
   content: "Open PDF";
   align-self: end;
-  padding-top: 9px;
-  border-top: 1px solid rgba(217, 226, 234, 0.95);
+  height: 0;
+  overflow: hidden;
+  padding-top: 0;
+  border-top: 0 solid transparent;
   color: var(--blue);
   font-size: 11px;
   font-weight: 900;
   text-transform: uppercase;
   opacity: 0;
   transform: translateY(4px);
-  transition: opacity 160ms ease, transform 160ms ease;
+  transition: opacity 160ms ease, transform 160ms ease, height 160ms ease, padding-top 160ms ease;
 }
 
 .evidence-card:hover {
@@ -1025,6 +1027,9 @@ h3 {
 
 .evidence-card:hover::after,
 .evidence-card:focus-visible::after {
+  height: 22px;
+  padding-top: 9px;
+  border-top: 1px solid rgba(217, 226, 234, 0.95);
   opacity: 1;
   transform: translateY(0);
 }
