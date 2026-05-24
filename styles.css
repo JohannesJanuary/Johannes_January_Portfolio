@@ -909,6 +909,42 @@ h3 {
   line-height: 1.4;
 }
 
+.evidence-panel-live {
+  border-style: solid;
+  border-color: rgba(36, 115, 91, 0.28);
+  background: linear-gradient(180deg, rgba(231, 244, 237, 0.74), #fff);
+}
+
+.evidence-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.evidence-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  padding: 7px 10px;
+  border: 1px solid rgba(31, 95, 139, 0.22);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--navy);
+  font-size: 12px;
+  font-weight: 900;
+  text-decoration: none;
+  transition: background 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.evidence-links a:hover {
+  transform: translateY(-1px);
+  border-color: var(--blue);
+  background: var(--blue);
+  color: #fff;
+}
+
 .evidence-library {
   margin-top: 28px;
   border: 1px solid var(--line);
