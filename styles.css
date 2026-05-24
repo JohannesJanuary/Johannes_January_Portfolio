@@ -383,6 +383,7 @@ h3 {
 
 .section {
   padding: 72px clamp(18px, 6vw, 80px);
+  scroll-margin-top: 92px;
 }
 
 .section-heading {
@@ -463,6 +464,10 @@ h3 {
 
 .project-section {
   background: var(--band);
+}
+
+.additional-projects-section {
+  background: #fff;
 }
 
 .project-grid {
