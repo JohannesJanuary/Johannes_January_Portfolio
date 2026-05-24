@@ -396,6 +396,19 @@ h3 {
   font-size: 17px;
 }
 
+.section-heading .evidence-note {
+  max-width: 740px;
+  padding: 12px 14px;
+  border: 1px solid rgba(31, 95, 139, 0.16);
+  border-left: 3px solid var(--blue);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--navy);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
 .section-heading.compact {
   margin-bottom: 0;
 }
@@ -871,6 +884,29 @@ h3 {
   color: var(--muted);
   font-size: 13px;
   line-height: 1.42;
+}
+
+.evidence-panel {
+  display: grid;
+  gap: 5px;
+  padding: 12px 13px;
+  border: 1px dashed rgba(31, 95, 139, 0.34);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.evidence-panel span {
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.evidence-panel p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.4;
 }
 
 #courses {
