@@ -1007,6 +1007,8 @@ h3 {
   content: "Open PDF";
   align-self: end;
   justify-self: center;
+  display: block;
+  width: 100%;
   height: 0;
   overflow: hidden;
   padding-top: 0;
